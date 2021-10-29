@@ -1,0 +1,13 @@
+.Category{
+    height: 240px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.checkoption{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}

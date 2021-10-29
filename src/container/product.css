@@ -1,0 +1,64 @@
+.allproducts{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 32px;
+    padding: 20px;
+    overflow: scroll;
+}
+
+.card{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 12px;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card .brand{
+    margin-top: 10px;
+}
+
+.card .description{
+    margin-top: 4px;
+    flex-grow: 1;
+    height: 40px;
+    color: #535766;
+    font-weight: 200;
+    overflow: hidden;
+}
+
+.Price{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Price .final{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.Price .mrp{
+    font-size: 12px;
+    text-decoration: line-through;
+}
+
+.Price .discount {
+    font-size: 12px;
+    color: #ff905a;
+}
+
+@media only screen and (max-width: 600px){
+    .allproducts{
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
